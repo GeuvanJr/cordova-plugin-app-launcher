@@ -21,6 +21,16 @@
 		</config-file>
 		<header-file src="src/ios/Launcher.h" />
 		<source-file src="src/ios/Launcher.m" />
+		
+		<!-- iOS9 whitelisting -->
+		<config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+		    <array>
+			<string>pt.slbenfica.mobiledev.SLB</string>
+			<string>pt.slbenfica.mobiledev.slb</string>
+		    </array>
+		</config-file>
+		
+		
 	</platform>
 
 	<!-- android -->
@@ -37,7 +47,5 @@
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
 		</config-file>
-		
-		
 	</platform>
 </plugin>		
