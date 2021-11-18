@@ -32,5 +32,12 @@
 		</config-file>
 		<source-file src="src/android/Launcher.java" target-dir="src/com/hutchind/cordova/plugins/launcher" />
 		<source-file src="src/android/ParseTypes.java" target-dir="src/com/hutchind/cordova/plugins/launcher" />
+		
+		
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+		</config-file>
+		
+		
 	</platform>
 </plugin>		
